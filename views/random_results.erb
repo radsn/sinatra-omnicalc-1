@@ -1,0 +1,22 @@
+<!-- /views/random_results.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Results</title>
+</head>
+<body>
+    <h1>Random Results</h1>
+    
+    <p>Minimum</p>
+    <p><%= params[:user_min].to_f %></p>
+
+    <p>Maximum</p>
+    <p><%= params[:user_max].to_f %></p>
+
+    <p>Random Number</p>
+    <p><%= @random_number.to_f %></p>
+
+    <a href="/random/new">Pick another random number</a>
+</body>
+</html>

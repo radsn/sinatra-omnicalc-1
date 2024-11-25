@@ -1,0 +1,19 @@
+<!-- /views/square_results.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Squared Results</title>
+</head>
+<body>
+    <h1>Squared Results</h1>
+    
+    <p>Number</p>
+    <p><%= params[:number] %></p>
+    
+    <p>Square</p>
+    <p><%= @result.to_f %></p>
+
+    <a href="/square/new">Calculate another square</a>
+</body>
+</html>

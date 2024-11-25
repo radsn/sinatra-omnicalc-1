@@ -1,0 +1,25 @@
+<!-- /views/payment_results.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Results</title>
+</head>
+<body>
+    <h1>Payment Results</h1>
+    
+    <p>APR</p>
+    <p><%= (params[:user_apr].to_f).round(4) %>%</p>
+
+    <p>Number of years</p>
+    <p><%= params[:user_years] %></p>
+
+    <p>Principal</p>
+    <p>$<%= '%.2f' % params[:user_pv].to_f %></p>
+
+    <p>Payment</p>
+    <p>$<%= '%.15f' % @payment %></p>
+
+    <a href="/payment/new">Calculate another payment</a>
+</body>
+</html>

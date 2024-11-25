@@ -1,0 +1,19 @@
+<!-- /views/square_new.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square a Number</title>
+</head>
+<body>
+    <form action="/square/results" method="get">
+        <div>
+            <label for="number">Enter a number</label>
+        </div>
+        <div>
+            <input type="text" id="number" name="number" placeholder="What number do you want to take the square of?">
+        </div>
+        <input type="submit" value="Calculate square">
+    </form>
+</body>
+</html>
