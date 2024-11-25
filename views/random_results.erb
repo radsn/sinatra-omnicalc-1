@@ -1,22 +1,28 @@
-<!-- /views/random_results.erb -->
+<h1>Random Results</h1>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Random Results</title>
-</head>
-<body>
-    <h1>Random Results</h1>
-    
-    <p>Minimum</p>
-    <p><%= params[:user_min].to_f %></p>
+<dl>
+  <dt>
+    Minimum
+  </dt>
+  <dd>
+    <%= @r_min %>
+  </dd>
 
-    <p>Maximum</p>
-    <p><%= params[:user_max].to_f %></p>
+  <dt>
+    Maximum
+  </dt>
+  <dd>
+    <%= @r_max %>
+  </dd>
 
-    <p>Random Number</p>
-    <p><%= @random_number.to_f %></p>
+  <dt>
+    Random Number
+  </dt>
+  <dd>
+    <%= @r_result %>
+  </dd>
+</dl>
 
-    <a href="/random/new">Pick another random number</a>
-</body>
-</html>
+<a href="/random/new">
+  Pick another random number
+</a>

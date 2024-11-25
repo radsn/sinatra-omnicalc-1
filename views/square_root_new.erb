@@ -1,19 +1,13 @@
-<!-- /views/square_root_new.erb -->
+<form action="/square_root/results">
+  <div>
+    <label for="number_input">
+      Enter a number
+    </label>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Square Root</title>
-</head>
-<body>
-    <form action="/square_root/results" method="get">
-        <div>
-            <label for="number">Enter a number</label>
-        </div>
-        <div>
-            <input type="text" id="number" name="number" placeholder="What number do you want to take the square root of?">
-        </div>
-        <input type="submit" value="Calculate square root">
-    </form>
-</body>
-</html>
+    <input id="number_input" text="text" name="user_number" placeholder="What number do you want to take the square root of?">
+  </div>
+
+  <button>
+    Calculate square root
+  </button>
+</form>

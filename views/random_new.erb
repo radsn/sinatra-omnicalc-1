@@ -1,21 +1,21 @@
-<!-- /views/random_new.erb -->
+<form action="/random/results">
+  <div>
+    <label for="min_input">
+      Minimum
+    </label>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Generate Random Number</title>
-</head>
-<body>
-    <form action="/random/results" method="get">
-        <div>
-            <label for="user_min">Minimum</label>
-            <input type="text" id="user_min" name="user_min" placeholder="E.g. 1.5">
-        </div>
-        <div>
-            <label for="user_max">Maximum</label>
-            <input type="text" id="user_max" name="user_max" placeholder="E.g. 4.5">
-        </div>
-        <input type="submit" value="Pick random number">
-    </form>
-</body>
-</html>
+    <input id="min_input" text="text" name="user_min" placeholder="E.g. 1.5">
+  </div>
+
+  <div>
+    <label for="max_input">
+      Maximum
+    </label>
+
+    <input id="max_input" text="text" name="user_max" placeholder="E.g. 4.5">
+  </div>
+
+  <button>
+    Pick random number
+  </button>
+</form>
